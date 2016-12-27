@@ -1,0 +1,34 @@
+﻿@model IEnumerable<VroomRoom.Models.Car>
+
+@{
+    ViewData["Title"] = "Cars";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<html>
+<head>
+    <title>VroomRoom</title>
+</head>
+<body>
+    <h2>Exotic Cars</h2>
+    <hr />
+    <br />
+    <br />
+    <ul>
+        @foreach (var listCar in Model)
+        {
+            <li>
+                <h2>  @Html.DisplayFor(modelItem => listCar.Name) </h2><br />
+                <img src="@listCar.Img" alt="listCar.Img" />
+                <h2>  @Html.ActionLink("Specs", "Details", new { id = listCar.CarId })</h2>
+                <hr />
+                <br />
+            </li>
+        }
+    </ul>
+</body>
+</html>
+
+<a href="/home/index"> Index</a>
+

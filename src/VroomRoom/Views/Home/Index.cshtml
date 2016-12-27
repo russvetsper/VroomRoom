@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Security.Claims
+<html>
+<head>
+    <title>VroomRoom</title>
+</head>
+<body>
+    <h2>Welcome Vroom Room!</h2>
+    <hr />
+
+    <iframe id="ytplayer" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/3naeAbylDRY?t=1m41s" frameborder="1"></iframe>
+   <hr />
+    <br />
+    <a href="/Account/Register"> Register</a> 
+    <a href="/Account/Login"> Login</a>    
+    <a href="/Cars/index"> Cars</a>
+</body>
+</html>

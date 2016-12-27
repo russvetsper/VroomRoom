@@ -1,0 +1,40 @@
+﻿@model VroomRoom.Models.Car
+
+<h1>@Html.DisplayFor(model => model.Name)</h1>
+<hr />
+
+ @*need to fix the image display for details page*@
+   <img src="@Html.DisplayFor(model => model.Img)" alt="@Html.DisplayFor(model => model.Name)" />
+
+
+
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+
+<h3>@Html.DisplayNameFor(model => model.Year): @Html.DisplayFor(model => model.Year)</h3>
+
+
+
+<h3>@Html.DisplayNameFor(model => model.Price): $@Html.DisplayFor(model => model.Price)</h3>
+
+
+<h3>@Html.DisplayNameFor(model => model.Engine): @Html.DisplayFor(model => model.Engine)</h3>
+
+
+<h3>@Html.DisplayNameFor(model => model.Horsepower): @Html.DisplayFor(model => model.Horsepower)</h3>
+
+
+<h3>@Html.DisplayNameFor(model => model.Torque): @Html.DisplayFor(model => model.Torque)</h3>
+
+
+
+<h3>@Html.DisplayNameFor(model => model.QuarterMileStats): @Html.DisplayFor(model => model.QuarterMileStats)</h3>
+
+
+
+<h3>@Html.DisplayNameFor(model => model.TopSpeed): @Html.DisplayFor(model => model.TopSpeed)
+</h3>
+
+
+
+<hr />
+<p>@Html.ActionLink("Back to Cars", "Index")</p>
